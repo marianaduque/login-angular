@@ -7,19 +7,19 @@
     </div>
     <div class="div-forms">
         
-        <form class="from" (ngSubmit)="fomularioEnviado()">
+        <form class="forms" (ngSubmit)="fomularioEnviado()">
             <h1 class="titulo">Inicio de Sesión</h1>
-            <div class="div-email">
+            <div class="div-input">
                 <label class="label">Correo Electrónico</label>
                 <input type="text" placeholder="Ingrese Correo electrónico" class="input" 
                 [(ngModel)]="correo" [ngModelOptions]="{standalone: true}"/>
             </div>
-            <div>
+            <div class="div-input">
                 <label class="label">Contraseña</label>
                 <input type="password" placeholder="Ingrese contraseña" class="input" 
                 [(ngModel)]="password" [ngModelOptions]="{standalone: true}"/>
             </div>
-            <div>
+            <div class="div-button">
                 <button type="submit" class="button">Inicia Sesión</button>
             </div>
         </form>
