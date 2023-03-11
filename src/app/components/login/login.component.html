@@ -1,0 +1,27 @@
+
+
+<div class="container">
+
+    <div class="div-img">
+         <img src="https://moniquilla.com/wp-content/uploads/2016/01/Logo-mariana-moniquilla-ok.jpg" class="img"/>
+    </div>
+    <div class="div-forms">
+        
+        <form class="from" (ngSubmit)="fomularioEnviado()">
+            <h1 class="titulo">Inicio de Sesión</h1>
+            <div class="div-email">
+                <label class="label">Correo Electrónico</label>
+                <input type="text" placeholder="Ingrese Correo electrónico" class="input" 
+                [(ngModel)]="correo" [ngModelOptions]="{standalone: true}"/>
+            </div>
+            <div>
+                <label class="label">Contraseña</label>
+                <input type="password" placeholder="Ingrese contraseña" class="input" 
+                [(ngModel)]="password" [ngModelOptions]="{standalone: true}"/>
+            </div>
+            <div>
+                <button type="submit" class="button">Inicia Sesión</button>
+            </div>
+        </form>
+    </div>
+</div>
